@@ -17,6 +17,9 @@ public class Main {
             System.out.println("Enter a value for minutes");
             int minutes = Keyboard.nextInt();
             hours = 60 <= minutes ? ++hours : hours;
+
+
+            System.out.println(hours%12);
             
 
 
