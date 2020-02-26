@@ -13,14 +13,11 @@ public class Main {
             Scanner Keyboard;
             Keyboard = new Scanner(System.in);
             System.out.println("Enter a value for hours");
-            int number = Keyboard.nextInt();
-
-            Scanner keyboard;
-            keyboard = new Scanner(System.in);
+            int hours = Keyboard.nextInt();
             System.out.println("Enter a value for minutes");
-            int Number = Keyboard.nextInt();
-
-
+            int minutes = Keyboard.nextInt();
+            hours = 60 <= minutes ? ++hours : hours;
+            
 
 
 
