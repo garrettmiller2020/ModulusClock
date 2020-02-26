@@ -18,7 +18,10 @@ public class Main {
             int minutes = Keyboard.nextInt();
             hours = 60 <= minutes ? ++hours : hours;
 
-            System.out.printf("The time is: %d:%02d",(hours%12),(minutes%60));
+            hours %= 12;
+            minutes %= 60;
+
+            System.out.printf("The time is: %d:%02d",hours,minutes);
 
 
 
